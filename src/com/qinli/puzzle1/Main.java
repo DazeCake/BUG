@@ -10,12 +10,15 @@ public class Main {
 
     public static void main(String[] args) {
 
-        students[1].name = "法外狂徒张三";
-        students[1].age = 20;
-        students[2].name = "李四";
-        students[2].age = 21;
-        students[3].name = "王五";
-        students[3].age = 19;
+        Student stu0 = new Student("法外狂徒张三", 20);
+        Student stu1 = new Student("李四", 21);
+        Student stu2 = new Student("王五", 19);
+
+        students[0] = stu0;
+        students[1] = stu1;
+        students[2] = stu2;
+
+        printStu();
 
         return;
     }
